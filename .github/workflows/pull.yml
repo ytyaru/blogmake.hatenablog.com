@@ -1,9 +1,8 @@
 name: Pull
 
 on:
-  push:
-    branches: [ main ]
-
+  schedule: # 1日1回（深夜1時）
+    - cron: '0 1 * * *'
 jobs:
   pull:
     runs-on: ubuntu-latest
