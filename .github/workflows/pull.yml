@@ -1,8 +1,8 @@
 name: Pull
 
 on:
-  schedule: # 1日1回（深夜1時）
-    - cron: '0 1 * * *'
+  schedule: # 1年1回（0時）       1時間1回（0時）:0 * * * *  1日1回（1時）:0 1 * * *
+    - cron: '0 0 1 1 *'
 jobs:
   pull:
     runs-on: ubuntu-latest
